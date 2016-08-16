@@ -30,6 +30,9 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# simple form makes life nice
+gem 'simple_form'
+
 # heroku prep
 gem 'rails_12factor', group: :production
 
