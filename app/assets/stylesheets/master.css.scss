@@ -2,6 +2,9 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+/* -- globals -- */
+$footer-height: 100px;
+
 
 /* -- general -- */
 
@@ -16,11 +19,22 @@ body {
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 
+html, body{
+  height: 100%;
+}
+
 /* -- patterns -- */
 
   /* - btns - */
+
   .btn {
     border-radius:0;
+  }
+
+  /* - clear break - */
+
+  .clr {
+    clear:both;
   }
 
   /* - standard box -*/
@@ -38,7 +52,25 @@ body {
 
 /* -- layouts -- */
 
+
+  /* - footer - */
+
+    #footer {
+      height:$footer-height;
+      color:white;
+      background-color: rgba(36,32,33,0.9);
+      font-family: "Helvetica Neue",Helvetica;
+      padding:10px 0px;
+      margin-top:30px;
+    }
+    
+    #footer a {
+      color:white;
+      font-weight:100;
+    }
+
   /* - nav - */
+
     .navbar {
       margin: 0;
       border-radius:0;
@@ -52,6 +84,15 @@ body {
       font-family: "Helvetica Neue", Helvetica;
       font-weight: 100;
       color: #fff;
+    }
+
+  /* - main body wrap - */
+
+    #wrap {
+      min-height: 100%;
+      height: auto;
+      margin: 0 auto -$footer-height;
+      padding: 0 0 $footer-height;
     }
 
 /* -- page specific -- */

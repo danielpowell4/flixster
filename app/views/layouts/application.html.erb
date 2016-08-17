@@ -10,18 +10,30 @@
   </head>
 
   <body>
-    <!-- TOP NAV -->
-    <%= render 'shared/top-nav' %>
+    <div id="wrap">
+      <!-- TOP NAV -->
+      <%= render 'shared/top-nav' %>
 
-    <!-- ALERTS -->
-    <% if notice.present? %>
-      <p class="alert alert-info"><%= notice %></p>
-    <% end %>
-    <% if alert.present? %>
-      <p class="alert alert-danger"><%= alert %></p>
-    <% end %>
+      <!-- ALERTS -->
+      <% if notice.present? %>
+        <p class="alert alert-info"><%= notice %></p>
+      <% end %>
+      <% if alert.present? %>
+        <p class="alert alert-danger"><%= alert %></p>
+      <% end %>
 
-    <!-- MAIN VIEW -->
-    <%= yield %>
+      <!-- MAIN VIEW -->
+      <%= yield %>
+    </div>
+
+    <br class="clr" />
+
+    <div id="footer">
+      <div class="container">
+        <b>Footer Here</b>
+        <br />
+        <%= link_to 'Link', '#' %>
+      </div>
+    </div>
   </body>
 </html>
