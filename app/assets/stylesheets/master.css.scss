@@ -46,8 +46,19 @@ html, body{
     padding:10px;
     margin-top: 4rem;
   }
+  
   .booyah-box h2, .booyah-box h1 {
     margin:10px;
+  }
+
+  /* - form styling - */
+
+  .field_with_errors {
+     color: #ff3333;
+     background-color: #FFEEEE;
+     border-radius: 3px;
+     padding:8px;
+     margin:10px;
   }
 
 /* -- layouts -- */
@@ -63,7 +74,7 @@ html, body{
       padding:10px 0px;
       margin-top:30px;
     }
-    
+
     #footer a {
       color:white;
       font-weight:100;
