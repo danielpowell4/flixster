@@ -43,6 +43,7 @@ gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'devise'
 
 gem 'carrierwave'
+gem 'fog-aws'
 gem 'figaro'
 
 group :development, :test do
