@@ -37,6 +37,20 @@ html, body{
     clear:both;
   }
 
+  /* - form styling - */
+
+  .field_with_errors {
+     color: #ff3333;
+     background-color: #FFEEEE;
+     border-radius: 3px;
+     padding:8px;
+     margin:10px;
+  }
+  /* - images - */
+  .img-responsive {
+    margin: auto;
+  }
+
   /* - standard box -*/
   .booyah-box {
     box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -46,19 +60,9 @@ html, body{
     padding:10px;
     margin-top: 4rem;
   }
-  
+
   .booyah-box h2, .booyah-box h1 {
     margin:10px;
-  }
-
-  /* - form styling - */
-
-  .field_with_errors {
-     color: #ff3333;
-     background-color: #FFEEEE;
-     border-radius: 3px;
-     padding:8px;
-     margin:10px;
   }
 
 /* -- layouts -- */
