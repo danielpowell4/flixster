@@ -1,5 +1,5 @@
 class LessonsController < ApplicationController
-  before_action :authenticate_user
+  before_action :authenticate_user!
   before_action :current_user_enrolled_in_course?
 
   def show
