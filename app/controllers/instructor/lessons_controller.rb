@@ -13,8 +13,8 @@ class Instructor::LessonsController < ApplicationController
   end
 
   def update
+    redirect_to root_path
     current_lesson.update_attributes(lesson_params)
-    render text: 'updated!'
   end
 
   private
