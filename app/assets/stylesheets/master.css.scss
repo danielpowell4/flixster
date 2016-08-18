@@ -37,7 +37,7 @@ html, body{
     clear:both;
   }
 
-  /* - form styling - */
+  /* - forms - */
 
   .field_with_errors {
      color: #ff3333;
@@ -51,7 +51,12 @@ html, body{
     margin: auto;
   }
 
-  /* - standard box -*/
+  /* - lists - */
+  ul {
+      list-style-type: none;
+  }
+
+  /* - standard box - */
   .booyah-box {
     box-shadow: 1px 1px 2px 0 #d0d0d0;
     background: #fff;
@@ -180,4 +185,34 @@ html, body{
     border: 1px solid;
     border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
     padding: 20px;
+  }
+
+  /* - instructor/courses#show - */
+  .section-li {
+    border: 1px solid;
+    border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+    padding:20px;
+    margin:20px;
+  }
+  ul .header {
+    font-size:25px;
+  }
+  ul .header .glyphicon {
+    font-size:20px;
+  }
+  .lessons li {
+    background:black;
+    color:white;
+    margin:10px;
+    font-family: "Helvetica Neue", Helvetica;
+    font-weight: 100;
+    padding:8px;
+    font-size:15px;
+  }
+  .lessons li b {
+    font-size:25px;
+    font-weight:100;
+  }
+  .lessons li p {
+    margin:0;
   }
