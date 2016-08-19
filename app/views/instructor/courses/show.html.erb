@@ -1,10 +1,10 @@
 <script>
-
-  $('.new-lesson-button').click(function( event ) {
-      var lessonUrl = $( event.target).data('lesson-url');
+  $(function() {
+    $('.new-lesson-button').click(function( event ) {
+      var lessonUrl = $(event.target).data('lesson-url');
       $('#newLessonForm').attr('action', lessonUrl);
     });
-
+   });
   $(function() {
     $('.lessons').sortable({
       update: function( event, ui ) {
@@ -53,8 +53,8 @@
           <span class="glyphicon glyphicon-list"></span>
           <%= section.title %>
         </div>
-        <button class="btn btn-primary btn-sm pull-right" data-toggle="modal" data-target="#newLessonModal" data-lesson-url="<%= instructor_section_lessons_path(section) %>">
-          New Lesson
+        <button class="btn btn-primary btn-sm pull-right new-lesson-button" data-toggle="modal" data-target="#newLessonModal" data-lesson-url="<%=instructor_section_lessons_path(section) %>">
+          New Lesson...
         </button>
         <br class="clr" />
         <br class="clr" />
@@ -116,18 +116,17 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="newSectionModalLabel">Add a lesson</h4>
+        <h4 class="modal-title" id="newLessonModalLabel">Add a lesson</h4>
       </div>
       <%= simple_form_for @lesson, url: "#", html: {id: 'newLessonForm' } do |f| %>
         <div class="modal-body">
-          <%= f.input :title %>
-          <%= f.input :subtitle %>
-          <br/>
-          <%= f.input :video %>
+            <%= f.input :title %>
+            <%= f.input :subtitle %>
+            <%= f.input :video %>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <%= f.submit "Add a lesson", class: 'btn btn-primary' %>
+          <%= f.submit "Add the lesson", class: 'btn btn-primary' %>
         </div>
       <% end %>
     </div>
